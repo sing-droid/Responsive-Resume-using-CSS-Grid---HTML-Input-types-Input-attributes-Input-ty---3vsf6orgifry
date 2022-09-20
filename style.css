@@ -6,4 +6,136 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+
+.main-content{
+    width: 80%;
+    min-height: 1200px;
+    background-color: azure;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+
+}
+
+.left-section{
+    background-color: rgb(0,102,133);
+    grid-column: span 1;
+    font-size: large;
+    font-weight: 500;
+    color:white;
+
+}
+
+.left-content{
+    padding: 1rem;
+
+
+}
+.profile-details {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-image {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    cursor: grab;
+    box-shadow: 0 0 20px 1px white;
+    overflow: hidden;
+
+}
+.profile-image:hover {
+    box-shadow: 0 0 20px 1px black;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+    border: 5px solid black;
+}
+.profile-image img {
+    height: 100px;
+    width: auto;
+    object-fit: fill;
+
+}
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+
+}
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+
+}
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+.email {
+    padding-bottom: 0.5rem;
+}
+.icon {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+
+}
+.icon:hover {
+    border: 3px solid black;
+}
+.skills {
+    font-size: 00.75rem;
+    text-align: center;
+    padding: 1rem .5rem;
+}
+.skillname {
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progressbar {
+    border: 1px solid white;
+    height: 5px;
+
+}
+.right-main-content{
+    padding: 2rem 3rem;
+
+
+}
+
+.right-section{
+
+ grid-column: span 1/ span 2;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(0,102,133);
+}
+
+.right-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .5rem;
+    letter-spacing: 1px;
+}
+@media screen and (max-width : 670px){
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
