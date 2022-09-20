@@ -99,18 +99,20 @@
     border: 3px solid black;
 }
 .skills {
-    font-size: 00.75rem;
+    font-size: 0.75rem;
     text-align: center;
-    padding: 1rem .5rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
 }
-.skillname {
+.skill-name {
     font-size: 0.65rem;
+    font-weight: 0.65rem;
     text-align: left;
     padding-bottom: 0.5rem;
 }
-.progressbar {
+.progress-bar {
     border: 1px solid white;
-    height: 5px;
+    height: 4px;
 
 }
 .right-main-content{
